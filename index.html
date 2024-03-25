@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USD to INR Converter</title>
+</head>
+<body>
+    <h1>USD to INR Converter</h1>
+    <form method="POST">
+        <label for="amount">Enter USD Amount:</label>
+        <input type="number" name="amount" id="amount" required>
+        <button type="submit">Convert</button>
+    </form>
+    {% if converted_amount %}
+    <p>{{ converted_amount }} INR</p>
+    {% endif %}
+</body>
+</html>
